@@ -1,0 +1,208 @@
+.container {
+  width: calc(100vw - 300px);
+  left: 300px;
+  margin-top: -100vh;
+  margin-bottom: 10vh;
+  position: relative;
+  height:auto;
+  display: flex;
+  padding: 50px;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.imgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.name {
+  font-weight: 500;
+  color: #d1411e;
+  font-size: 18px;
+}
+
+.total {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 90%;
+  max-height: 300px;
+  background-color: #333;
+  padding: 10px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  height: auto;
+  padding: 1vh 0;
+  color: #d88144;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s
+}
+
+.button:hover{
+  background-color: #d88144;
+  color: #fff;
+}
+
+.paymentMethods {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 70%;
+    max-height: 250px;
+    justify-content: center;
+  }
+  .right{
+    margin-top:5vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+@media screen and (max-width: 910px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .table {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .trTitle{
+    display: none;
+  }
+
+  .tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .imgContainer{
+    width: 20vw;
+    height: 20vw;
+    margin-bottom: 15px;
+  }
+
+  .name,.total{
+    font-size: 17px;
+  }
+
+  .extras,.price,.quantity{
+    font-size: 15px;
+  }
+
+  .price::before{
+    content: "Price: ";
+    font-weight: 200;
+  }
+  .quantity::before{
+    content: "Quantity: ";
+    font-weight: 200;
+  }
+  .total::before{
+    content: "Total: ";
+    font-weight: 200;
+  }
+  .right {
+    margin-top: 10px;
+  }
+  
+  .wrapper{
+    width: 90%;
+    max-height: 200px;
+    padding: 5px 50px 20px;
+  }
+  .title{
+    font-size: 18px;
+  }
+  .totalText{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .container {
+    left: 0;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .table {
+    flex-direction: column;
+  }
+  .imgContainer{
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .name,.total{
+    font-size: 20px;
+    font-weight:300;
+  }
+
+  .extras,.price,.quantity{
+    font-size: 18px;
+    font-weight:200;
+  }
+  .total{
+    color: #d1411e;
+  }
+  .wrapper{
+    width: 100%;
+  }
+}

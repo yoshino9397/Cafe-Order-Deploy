@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+.container {
+  height: 60vh;
+  width: calc(100vw - 300px);
+  background-color: white;
+  left: 300px;
+  overflow: hidden;
+  position: relative;
+  margin:8vh 0;
+}
+
+.arrowContainer {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper {
+  width: 300vw;
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out ;
+}
+
+.imgContainer {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  filter:grayscale(20%);
+}
+  
+.desc{
+  display: flex;
+  width: 50vw;
+  height:60vh;
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  font-family: 'Square Peg';
+  font-size: 110px;
+  color:#3e563f
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+  height: 40vh;
+  margin: 0;
+  }
+  .desc{
+    height: 40vh;
+    width: 60vw;
+    font-size: 60px;
+    color:rgb(84, 130, 86);
+  }
+}
+@media screen and (max-width: 660px) {
+  .container{
+    width: 100vw;
+    left: 0;
+  }
+  .desc{
+    height: 40vh;
+    width: 100vw;
+    font-size: 80px;
+    color:rgb(84, 130, 86);
+  }
+}

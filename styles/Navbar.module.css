@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+.container{
+  height: 100vh;
+  width: 300px;
+  padding: 0px 50px;
+  background-color: #2d452e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo{
+  margin-top:7vh;
+  box-shadow:7px 5px 5px #d88144;
+  width: 150px;
+  height: 130px
+}
+
+.menuIcon{
+  display:none;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.item:nth-child(2) {
+  margin-top: 4vh;
+  flex: 3;
+}
+
+.item:last-child {
+  justify-content: flex-start;
+}
+
+.texts {
+  margin-top: 4vh;
+  text-align: center;
+}
+
+.text:first-child {
+  font-family: 'Fredericka the Great';
+  font-size: 40px;
+  font-weight: lighter;
+  color: #d88144;
+}
+
+.text:last-child {
+  margin-top: 2vh;
+  font-size: 18px;
+  font-weight:lighter;
+  color: white
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  color: rgb(194, 195, 221);
+}
+
+.listItem {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.listItem:hover{
+  font-weight: 100;
+  color: white;
+}
+
+.cart{
+    position: relative;
+    cursor: pointer;
+}
+.counter{
+    position: absolute;
+    top: 0px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d88144;
+}
+
+@media screen and (max-width:660px) {
+  .container{
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    height: 100px;
+    width: 100vw;
+    }
+    .logo{
+      display: none;
+    }
+  .menuIcon{
+    display:flex;
+    margin:0 8vw 0 3vw;
+    cursor: pointer;
+  }
+    .item{
+      flex-direction: row;
+    }
+    .texts {
+      margin:0 auto;
+    }
+    .text:first-child {
+      font-size: 37px;
+      font-weight: lighter;
+    }
+    .text:last-child {
+      display: none
+    }
+  .item:nth-child(2) {
+    display: none;
+  }
+
+  .item:nth-child(1) {
+    flex: 3;
+  }
+  .cart{
+    position: relative;
+    display: flex;
+    margin-left: 8vw;
+  }
+}
