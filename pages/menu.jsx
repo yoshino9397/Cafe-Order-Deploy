@@ -21,7 +21,7 @@ const Menu = ({ cafeList }) => {
 };
 
 export const getServerSideProps = async () => {
-  const res = await axios.get("http://localhost:3000/api/products");
+  const res = await axios.get(`${process.env.URL}/api/products`);
   return {
     props: {
       cafeList: res.data,

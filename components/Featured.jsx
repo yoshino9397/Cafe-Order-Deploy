@@ -8,17 +8,17 @@ const Featured = () => {
   const images = [
     {
       id: 1,
-      image: "/img/slide1.jpg",
+      image: `/img/slide1.jpg`,
       desc: "Enjoy our coffee!",
     },
     {
       id: 2,
-      image: "/img/slide2.jpg",
+      image: `/img/slide2.jpg`,
       desc: "Latte Lovers",
     },
     {
       id: 3,
-      image: "/img/slide3.jpg",
+      image: `/img/slide3.jpg`,
       desc: "Fair Trade Beans",
     },
   ];
