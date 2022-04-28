@@ -4,7 +4,6 @@ import axios from "axios";
 import { BsCheckSquareFill } from "react-icons/bs";
 
 const Order = ({ order }) => {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const status = order.status;
   const statusClass = (index) => {
     if (index - status < 1) return styles.done;
@@ -42,7 +41,7 @@ const Order = ({ order }) => {
         </div>
         <div className={styles.row}>
           <div className={statusClass(0)}>
-            <Image src={`${PF}paid.png`} width={100} height={100} alt="" />
+            <Image src="/img/paid.png" width={100} height={100} alt="" />
             <span>Payment</span>
             <div className={styles.checkedIcon}>
               <BsCheckSquareFill
@@ -53,21 +52,21 @@ const Order = ({ order }) => {
             </div>
           </div>
           <div className={statusClass(1)}>
-            <Image src={`${PF}bake.png`}  width={100} height={100} alt="" />
+            <Image src="/img/bake.png" width={100} height={100} alt="" />
             <span>Preparing</span>
             <div className={styles.checkedIcon}>
               <BsCheckSquareFill fontSize="20px" style={{ marginTop: "2vh" }} />
             </div>
           </div>
           <div className={statusClass(2)}>
-            <Image src={`${PF}way.png`}  width={100} height={100} alt="" />
+            <Image src="/img/way.png" width={100} height={100} alt="" />
             <span>On the way</span>
             <div className={styles.checkedIcon}>
               <BsCheckSquareFill fontSize="20px" style={{ marginTop: "2vh" }} />
             </div>
           </div>
           <div className={statusClass(3)}>
-            <Image src={`${PF}delivered.png`}  width={100} height={100} alt="" />
+            <Image src="/img/delivered.png" width={100} height={100} alt="" />
             <span>Delivered</span>
             <div className={styles.checkedIcon}>
               <BsCheckSquareFill fontSize="20px" style={{ marginTop: "2vh" }} />

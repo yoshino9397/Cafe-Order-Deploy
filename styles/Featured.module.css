@@ -45,8 +45,7 @@
   z-index: 2;
   font-family: 'Square Peg';
   font-size: 110px;
-  /* color:#3e563f */
-  color:rgb(152, 76, 76);
+  color:#3e563f
 }
 
 @media screen and (max-width: 800px) {
