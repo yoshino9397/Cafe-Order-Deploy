@@ -35,7 +35,7 @@
   filter:grayscale(20%);
 }
   
-.desc{
+.description{
   display: flex;
   width: 50vw;
   height:60vh;
@@ -45,7 +45,8 @@
   z-index: 2;
   font-family: 'Square Peg';
   font-size: 110px;
-  color:#3e563f
+  /* color:#3e563f */
+  color:rgb(152, 76, 76);
 }
 
 @media screen and (max-width: 800px) {
