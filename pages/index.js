@@ -10,7 +10,7 @@ import Top from "../components/Top";
 export default function Home({ cafeList, admin }) {
   const [close, setClose] = useState(true);
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Cafe Lynx in NY</title>
         <meta name="description" content="Good coffee makes your day" />
