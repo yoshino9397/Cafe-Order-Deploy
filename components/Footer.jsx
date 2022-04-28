@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <Image src={"/img/footer.jpg"} objectFit="cover" layout="fill" alt="" />
+        <Image src="/img/footer.jpg" objectFit="cover" layout="fill" alt="" />
       </div>
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.title}>DO YOU HAVE A QUESTIONS?</h2>
-          <h3 className={styles.phone}>noreply@yoshino.com</h3>
+          <h3 className={styles.phone}>noreply@yoshino.com</h3>s
           <div className={styles.media}>
             <AiFillInstagram />
             <AiFillTwitterCircle />
