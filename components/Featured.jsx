@@ -47,7 +47,12 @@ const Featured = () => {
       >
         {images.map((item) => (
           <div className={styles.imgContainer} key={item.id}>
-            <div className={styles.description}>{item.desc}</div>
+            <div
+              className={styles.desc}
+              style={{ fontFamily: "Square Peg" }}
+            >
+              {item.desc}
+            </div>
             <Image src={item.image} alt="" layout="fill" objectFit="cover" />
           </div>
         ))}
