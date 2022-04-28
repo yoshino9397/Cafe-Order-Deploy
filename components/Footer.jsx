@@ -4,11 +4,15 @@ import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <Image src={`${PF}footer.jpg`} objectFit="cover" layout="fill" alt="" />
+        <Image
+          src={`${process.env.REACT_APP_PUBLIC_FOLDER}footer.jpg`}
+          objectFit="cover"
+          layout="fill"
+          alt=""
+        />
       </div>
       <div className={styles.item}>
         <div className={styles.card}>

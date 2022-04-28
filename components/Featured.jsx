@@ -4,22 +4,21 @@ import { useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const Featured = () => {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [index, setIndex] = useState(0);
   const images = [
     {
       id: 1,
-      image: `${PF}slide1.jpg`,
+      image: `${process.env.REACT_APP_PUBLIC_FOLDER}slide1.jpg`,
       desc: "Enjoy our coffee!",
     },
     {
       id: 2,
-      image: `${PF}slide2.jpg`,
+      image: `${process.env.REACT_APP_PUBLIC_FOLDER}slide2.jpg`,
       desc: "Latte Lovers",
     },
     {
       id: 3,
-      image: `${PF}slide3.jpg`,
+      image: `${process.env.REACT_APP_PUBLIC_FOLDER}slide3.jpg`,
       desc: "Fair Trade Beans",
     },
   ];
