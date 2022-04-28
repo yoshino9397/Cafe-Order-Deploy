@@ -24,7 +24,7 @@ const Cart = () => {
 
   const createOrder = async (data) => {
     try {
-      const res = await axios.post(`${process.env.URL}/api/orders`, data);
+      const res = await axios.post(`http://cafe-order-app.herokuapp.com/api/orders`, data);
       // if (res.status === 201) {
       //   dispatch(reset());
       //   router.push(`/orders/${res.data._id}`);
