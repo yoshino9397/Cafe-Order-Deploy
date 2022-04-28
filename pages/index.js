@@ -6,7 +6,6 @@ import AddButton from "../components/AddButton";
 import CafeList from "../components/CafeList";
 import Featured from "../components/Featured";
 import Top from "../components/Top";
-import styles from "../styles/Home.module.css";
 
 export default function Home({ cafeList, admin }) {
   const [close, setClose] = useState(true);
