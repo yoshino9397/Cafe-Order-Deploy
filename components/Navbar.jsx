@@ -6,13 +6,14 @@ import { CgShoppingCart, CgMenu } from "react-icons/cg";
 
 const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   return (
     <>
       <div className={styles.container}>
         <div className={styles.item}>
           <div className={styles.logo}>
-            <Image src="/img/logo.jpg" alt="" width="150px" height="130px" />
+            <Image src={`${PF}logo.jpg`} alt="" width="150px" height="130px" />
           </div>
           <div className={styles.menuIcon}>
             <CgMenu color="white" fontSize="40px" />

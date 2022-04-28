@@ -1,8 +1,12 @@
 import styles from "../styles/Top.module.css";
 
 const Top = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ backgroundImage: url(`${PF}top.jpg`) }}
+    >
       <div className={styles.slide}>
         <div className={styles.item}>
           <h1 className={styles.h1}>
