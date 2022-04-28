@@ -2,10 +2,7 @@ import styles from "../styles/Top.module.css";
 
 const Top = () => {
   return (
-    <div
-      className={styles.container}
-      style={{ backgroundImage: url(`${process.env.REACT_APP_PUBLIC_FOLDER}top.jpg`) }}
-    >
+    <div className={styles.container}>
       <div className={styles.slide}>
         <div className={styles.item}>
           <h1 className={styles.h1}>
