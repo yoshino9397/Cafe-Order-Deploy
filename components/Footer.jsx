@@ -12,7 +12,7 @@ const Footer = () => {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.title}>DO YOU HAVE A QUESTIONS?</h2>
-          <h3 className={styles.phone}>noreply@yoshino.com</h3>s
+          <h3 className={styles.phone}>noreply@yoshino.com</h3>
           <div className={styles.media}>
             <AiFillInstagram />
             <AiFillTwitterCircle />
