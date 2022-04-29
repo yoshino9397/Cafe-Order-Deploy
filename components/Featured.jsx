@@ -47,7 +47,8 @@ const Featured = () => {
       >
         {images.map((item) => (
           <div className={styles.imgContainer} key={item.id}>
-            <div className={styles.description}>{item.desc}</div>
+            <div className={styles.desc}>{item.desc}</div>
+            {/* Font-family of desc doesn't work */}
             <Image src={item.image} alt="" layout="fill" objectFit="cover" />
           </div>
         ))}

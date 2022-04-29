@@ -35,7 +35,7 @@
   filter:grayscale(20%);
 }
   
-.description{
+.desc{
   display: flex;
   width: 50vw;
   height:60vh;
