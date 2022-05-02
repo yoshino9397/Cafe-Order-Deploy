@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 .container {
   height: 60vh;
@@ -43,8 +43,9 @@
   align-items: center;
   position: absolute;
   z-index: 2;
-  font-family: 'Covered By Your Grace';
-  font-size: 110px;
+  font-family: 'Square Peg', cursive;
+  font-size: 95px;
+  margin-left: 3.8vw;
   color:#3e563f
 }
 
