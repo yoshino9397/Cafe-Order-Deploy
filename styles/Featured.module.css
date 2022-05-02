@@ -44,7 +44,8 @@
   position: absolute;
   z-index: 2;
   font-family: 'Square Peg', cursive;
-  font-size: 100px;
+  font-size: 95px;
+  margin-left: 3vw;
   color:#3e563f
 }
 
