@@ -32,7 +32,9 @@ const Navbar = () => {
             </Link>
             <li className={styles.listItem}>Events</li>
             <li className={styles.listItem}>Blog</li>
-            <li className={styles.listItem}>Contact</li>
+            <Link href="/contact" passHref>
+              <li className={styles.listItem}>Contact</li>
+            </Link>
           </ul>
         </div>
         <Link href="/cart" passHref>
