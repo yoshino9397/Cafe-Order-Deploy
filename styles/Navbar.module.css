@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 
-.container{
+.container {
   height: 100vh;
   width: 300px;
   padding: 0px 50px;
@@ -11,17 +11,17 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 990;
 }
-.logo{
-  margin-top:7vh;
-  box-shadow:7px 5px 5px #d88144;
+.logo {
+  margin-top: 7vh;
+  box-shadow: 7px 5px 5px #d88144;
   width: 150px;
-  height: 130px
+  height: 130px;
 }
 
-.menuIcon{
-  display:none;
+.menuIcon {
+  display: none;
 }
 
 .item {
@@ -29,10 +29,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.item:nth-child(2) {
+.menu {
   margin-top: 4vh;
   flex: 3;
 }
@@ -47,7 +46,7 @@
 }
 
 .text:first-child {
-  font-family: 'Fredericka the Great';
+  font-family: "Fredericka the Great";
   font-size: 40px;
   font-weight: lighter;
   color: #d88144;
@@ -56,8 +55,8 @@
 .text:last-child {
   margin-top: 2vh;
   font-size: 18px;
-  font-weight:lighter;
-  color: white
+  font-weight: lighter;
+  color: white;
 }
 
 .list {
@@ -75,68 +74,88 @@
   font-weight: lighter;
   cursor: pointer;
 }
-.listItem:hover{
+.listItem:hover {
   font-weight: 100;
   color: white;
 }
 
-.cart{
-    position: relative;
-    cursor: pointer;
+.cart {
+  position: relative;
+  cursor: pointer;
 }
-.counter{
-    position: absolute;
-    top: 0px;
-    right: -8px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #d88144;
+.counter {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #d88144;
 }
-
-@media screen and (max-width:660px) {
-  .container{
+.slideMenu {
+  display: none;
+}
+@media screen and (max-width: 660px) {
+  .container {
     flex-direction: row;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     height: 100px;
     width: 100vw;
-    }
-    .logo{
-      display: none;
-    }
-  .menuIcon{
-    display:flex;
-    margin:0 8vw 0 3vw;
-    cursor: pointer;
   }
-    .item{
-      flex-direction: row;
-    }
-    .texts {
-      margin:0 auto;
-    }
-    .text:first-child {
-      font-size: 37px;
-      font-weight: lighter;
-    }
-    .text:last-child {
-      display: none
-    }
-  .item:nth-child(2) {
+  .logo {
     display: none;
   }
-
+  .menuIcon {
+    display: flex;
+    margin: 0 8vw 0 3vw;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .item {
+    flex-direction: row;
+  }
+  .texts {
+    margin: 0 auto;
+  }
+  .text:first-child {
+    font-size: 37px;
+    font-weight: lighter;
+  }
+  .text:last-child {
+    display: none;
+  }
   .item:nth-child(1) {
     flex: 3;
   }
-  .cart{
+  .none {
+    display: none;
+  }
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #2d452e;
+    z-index: 995;
+    align-items: center;
+    justify-content: center;
+  }
+  .listItem {
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .cart {
     position: relative;
     display: flex;
     margin-left: 8vw;
